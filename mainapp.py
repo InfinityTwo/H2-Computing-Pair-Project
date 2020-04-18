@@ -323,6 +323,7 @@ def newMemberCheck():
     data = request.form
     failures = [False, False, False, False, False, False]
     dataIndex = 0
+    newMemberID = nextmemberid()
     for i in data:
         if i == "membershipgender": #selection check
             if data[i].split("/")[0] == "0":
